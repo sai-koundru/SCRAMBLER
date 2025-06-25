@@ -5,7 +5,7 @@ module tb_scrambler;
     
     wire [7:0] scrambler_out;
 
-    chat_test uut ( .clk(clk), .din(din), .scrambler_out(scrambler_out) );
+    scrambler uut ( .clk(clk), .din(din), .scrambler_out(scrambler_out) );
 
     
     initial clk = 0;
